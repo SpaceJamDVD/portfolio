@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid color-mix(in srgb, var(--charcoal) 12%, transparent);
+  border-radius: 16px;
+  padding: 16px;
+  background: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+.summary {
+  margin: 8px 0 12px;
+  color: var(--warmGray);
+  font-size: 0.95rem;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.tag {
+  border: 1px solid color-mix(in srgb, var(--forest) 35%, transparent);
+  color: var(--charcoal);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: color-mix(in srgb, var(--forest) 8%, white);
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}

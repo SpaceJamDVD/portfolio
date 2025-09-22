@@ -1,0 +1,22 @@
+/* tiny reset + base */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--charcoal);
+  background: var(--cream);
+}
+a {
+  color: var(--rust);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,55 @@
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: var(--charcoal);
+}
+.blurb {
+  color: var(--warmGray);
+  margin-top: 8px;
+}
+
+.heroArt {
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  background: radial-gradient(
+      800px 500px at 20% -10%,
+      color-mix(in srgb, var(--amber) 20%, transparent),
+      transparent 40%
+    ),
+    radial-gradient(
+      600px 400px at 120% 20%,
+      color-mix(in srgb, var(--rust) 15%, transparent),
+      transparent 35%
+    ),
+    var(--cream) url('/images/fox-hero.png') center/cover no-repeat;
+  border: 1px solid color-mix(in srgb, var(--charcoal) 10%, transparent);
+}
+
+.section {
+  margin-top: 32px;
+}
+.h2 {
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+  color: var(--charcoal);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
