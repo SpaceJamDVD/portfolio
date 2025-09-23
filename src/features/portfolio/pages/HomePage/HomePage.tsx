@@ -23,8 +23,8 @@ export default function HomePage() {
             But I <em>do</em> love foxes.
             <br />
             <br />
-            After having a career in agritourism, I decided did'nt want to just
-            grow things, but build them too. I went back to school to study
+            After having a career in agritourism, I decided I didn't want to
+            just grow things, but build them too. I went back to school to study
             computer science and web development, and I've been hooked ever
             since. I get excited about designing unique visual identities and
             solving technical challenges.
@@ -32,6 +32,7 @@ export default function HomePage() {
         }
         imageSrc="/images/QuinYakidaki.jpg"
       />
+      <Divider variant="custom" thickness="4px" color="var(--warmGrey)" />
 
       {/* rest of page */}
     </main>
