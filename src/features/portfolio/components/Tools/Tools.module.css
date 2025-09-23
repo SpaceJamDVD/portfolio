@@ -1,0 +1,93 @@
+.tools {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 1100px;
+  padding: 0 24px;
+}
+
+.heading {
+  font-family: 'Merriweather', serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 32px;
+  color: var(--rust);
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Each row is just a viewport for the moving track */
+.row {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* no padding/gaps here; keep it a clean viewport */
+}
+
+/* The moving content */
+.track {
+  display: inline-flex;
+  width: max-content; /* <-- key: intrinsic width equals content */
+  gap: 36px;
+  will-change: transform;
+}
+
+.icon {
+  flex: 0 0 auto; /* don't shrink */
+  display: block; /* avoid inline whitespace issues */
+  transition: transform 220ms ease, opacity 220ms ease;
+  opacity: 0.95;
+}
+.icon:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+/* Motion (different durations feels nicer) */
+.trackLeft {
+  animation: marquee-left 60s linear infinite;
+}
+.trackRight {
+  animation: marquee-right 70s linear infinite;
+}
+
+/* Ensure the first frame applies before the first tick */
+.trackLeft,
+.trackRight {
+  animation-fill-mode: both;
+}
+
+/* Keyframes */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  } /* <-- start at -50% */
+  to {
+    transform: translateX(0);
+  } /* <-- end at 0 */
+}
+
+/* Pause on hover */
+.carousel:hover .track {
+  animation-play-state: paused;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none !important;
+  }
+}
