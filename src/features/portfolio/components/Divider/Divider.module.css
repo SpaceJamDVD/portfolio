@@ -1,0 +1,28 @@
+.divider {
+  border: none;
+  margin: 2rem auto;
+}
+
+.solid {
+  border-top-style: solid;
+}
+
+.dashed {
+  border-top-style: dashed;
+}
+
+.gradient {
+  border: 0;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--rust),
+    var(--warmGray),
+    var(--rust)
+  );
+  border-radius: 2px;
+}
+
+.custom {
+  border-top: double 4px var(--rust);
+}

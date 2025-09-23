@@ -1,42 +1,39 @@
+import Divider from '../../components/Divider/Divider';
+import { Hero } from '../../components/Hero';
+import Wedge from '../../components/Wedge/Wedge';
+import About from '../../components/About/About';
 import styles from './HomePage.module.css';
-import { ProjectCard } from '../../components/ProjectCard';
-import type { Project } from '../../components/ProjectCard';
-
-const projects: Project[] = [
-  {
-    title: 'Splitter — Real-time Expense Tracker (MERN)',
-    summary:
-      'Live balances via Socket.IO, JWT + refresh, Mongo models for groups/transactions/balances, settlement recalculation.',
-    tags: ['React', 'Node', 'Express', 'MongoDB', 'Socket.IO', 'JWT'],
-    repo: 'https://github.com/your-username/splitter',
-    live: 'https://your-live-demo.example',
-  },
-  // add BoothBoost, Tsuga...
-];
 
 export default function HomePage() {
   return (
     <main className={styles.page}>
-      <section className={styles.hero}>
-        <div>
-          <h1 className={styles.h1}>
-            Full-stack Developer — MERN / .NET / Angular
-          </h1>
-          <p className={styles.blurb}>
-            I build practical, real-time web apps with clean architecture.
-          </p>
-        </div>
-        <div className={styles.heroArt} aria-hidden />
-      </section>
+      <Wedge />
+      <Hero
+        heading="Quin Finocchio —"
+        subheading="Full-stack developer, designer, & digital artist"
+        blurb="I get excited about creating novel web experiences and seeing ideas come to life."
+        imageSrc="/images/animorphlayout.png"
+      />
+      <Divider variant="solid" thickness="4px" color="var(--warmGrey)" />
+      <About
+        heading="I'm actually a human —"
+        subheading="... not a fox."
+        blurb={
+          <>
+            But I <em>do</em> love foxes.
+            <br />
+            <br />
+            After having a career in agritourism, I decided I wanted to not just
+            grow things, but build them too. I went back to school to study
+            computer science and web development, and I've been hooked ever
+            since. I get excited about designing unique visual identities and
+            solving technical challenges.
+          </>
+        }
+        imageSrc="/images/QuinYakidaki.jpg"
+      />
 
-      <section className={styles.section}>
-        <h2 className={styles.h2}>Projects</h2>
-        <div className={styles.grid}>
-          {projects.map((p) => (
-            <ProjectCard key={p.title} project={p} />
-          ))}
-        </div>
-      </section>
+      {/* rest of page */}
     </main>
   );
 }

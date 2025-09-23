@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  max-width: 1600px; /* matches your art size */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.heroContent {
+  position: relative;
+}
+
+.heroArt {
+  width: 130%;
+  height: auto;
+  display: block;
+  margin-left: -15%; /* center the art */
+}
+
+.heroText {
+  position: absolute;
+  bottom: 10%; /* tuck under arc — adjust to taste */
+  left: 37%; /* nudge horizontally */
+  max-width: 600px;
+  color: var(--charcoal);
+}
+
+.heading {
+  font-family: 'Merriweather', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.subheading {
+  font-family: 'Merriweather', serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 500;
+  margin: 0 0 1rem;
+  color: var(--rust);
+}
+
+.blurb {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--warmGray);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .heroText {
+    position: static; /* no overlap on small screens */
+    margin-top: 16px;
+    text-align: center;
+    max-width: none;
+  }
+
+  .heading,
+  .subheading,
+  .blurb {
+    text-align: center;
+  }
+}

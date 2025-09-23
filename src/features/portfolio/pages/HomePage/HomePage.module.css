@@ -23,20 +23,16 @@
 }
 
 .heroArt {
-  aspect-ratio: 4 / 3;
-  border-radius: 16px;
-  background: radial-gradient(
-      800px 500px at 20% -10%,
-      color-mix(in srgb, var(--amber) 20%, transparent),
-      transparent 40%
-    ),
-    radial-gradient(
-      600px 400px at 120% 20%,
-      color-mix(in srgb, var(--rust) 15%, transparent),
-      transparent 35%
-    ),
-    var(--cream) url('/images/fox-hero.png') center/cover no-repeat;
-  border: 1px solid color-mix(in srgb, var(--charcoal) 10%, transparent);
+  padding: 16px;
+  background: #fff;
+  border: 8px solid var(--forest);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.heroArt img {
+  display: block;
+  max-width: 100%;
+  border-radius: 4px;
 }
 
 .section {
