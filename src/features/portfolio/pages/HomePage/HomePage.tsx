@@ -37,7 +37,9 @@ export default function HomePage() {
       <Hero
         heading="Quin Finocchio —"
         subheading="Full-stack developer, designer, & digital artist"
-        blurb="I get excited about creating novel web experiences and seeing ideas come to life."
+        blurb="Nice to meet you!"
+        link="https://github.com/SpaceJamDVD"
+        link2="https://www.linkedin.com/in/quin-finocchio-b7132724b/"
         imageSrc="/images/animorphlayout.png"
       />
       <Divider variant="solid" thickness="4px" color="var(--warmGrey)" />

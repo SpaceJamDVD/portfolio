@@ -1,13 +1,23 @@
 import styles from './Hero.module.css';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 type Props = {
   heading: string;
   blurb: string;
   subheading: string;
+  link: string; // GitHub
+  link2: string; // LinkedIn
   imageSrc: string;
 };
 
-export default function Hero({ heading, subheading, blurb, imageSrc }: Props) {
+export default function Hero({
+  heading,
+  subheading,
+  blurb,
+  link,
+  link2,
+  imageSrc,
+}: Props) {
   return (
     <section className={styles.hero}>
       <div className={styles.heroContent}>
@@ -16,6 +26,19 @@ export default function Hero({ heading, subheading, blurb, imageSrc }: Props) {
           <h1 className={styles.heading}>{heading}</h1>
           <h2 className={styles.subheading}>{subheading}</h2>
           <p className={styles.blurb}>{blurb}</p>
+
+          <div className={styles.heroLinks}>
+            {link && (
+              <a href={link} target="_blank" rel="noreferrer">
+                <SiGithub size={28} /> GitHub
+              </a>
+            )}
+            {link2 && (
+              <a href={link2} target="_blank" rel="noreferrer">
+                <SiLinkedin size={28} /> LinkedIn
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </section>

@@ -18,7 +18,7 @@
 
 .heroText {
   position: absolute;
-  bottom: 10%; /* tuck under arc — adjust to taste */
+  bottom: 5%; /* tuck under arc — adjust to taste */
   left: 37%; /* nudge horizontally */
   max-width: 600px;
   color: var(--charcoal);
@@ -44,6 +44,26 @@
   font-size: 1rem;
   color: var(--warmGray);
   margin: 0;
+}
+
+.heroLinks {
+  margin-top: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.heroLinks a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--charcoal);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.heroLinks a:hover {
+  color: var(--rust);
 }
 
 @media (max-width: 900px) {
