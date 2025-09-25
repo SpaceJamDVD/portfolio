@@ -99,7 +99,7 @@ export default function HomePage() {
         project={{
           title: 'BoothBoost',
           summary:
-            'Built as my senior capstone project, BoothBoost is a full-stack web app designed to gamify fundraising at conventions and trade shows. Vendors can broadcast messages, track live leaderboards, and manage conventions in real-time. Awarded "Category Winner" at the UBCO capstone showcase.',
+            'Built as my senior capstone project in an agile team of four, BoothBoost is a full-stack web app designed to gamify fundraising at conventions and trade shows. Vendors can broadcast messages, track live leaderboards, and manage conventions in real-time. Awarded "Category Winner" at the UBCO capstone showcase.',
           image: '/images/boothboost1.jpg',
           image2: '/images/boothboost2.jpg',
           tags: [
@@ -108,6 +108,7 @@ export default function HomePage() {
             { name: 'ASP.NET Core', Icon: SiDotnet, color: '#512BD4' },
             { name: 'MySQL', Icon: SiMysql, color: '#4479A1' },
           ],
+          video: 'https://www.youtube.com/watch?v=cvw6szvee1Q',
         }}
       />
 

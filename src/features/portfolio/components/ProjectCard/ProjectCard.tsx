@@ -9,12 +9,13 @@ export type Project = {
   tags: { name: string; Icon: IconType; color?: string }[];
   repo?: string;
   live?: string;
+  video?: string;
 };
 
 type Props = { project: Project };
 
 export default function ProjectCard({ project }: Props) {
-  const { title, summary, image, image2, tags, repo, live } = project;
+  const { title, summary, image, image2, tags, repo, live, video } = project;
 
   return (
     <article className={styles.card} aria-labelledby={`${title}-h`}>
@@ -46,6 +47,11 @@ export default function ProjectCard({ project }: Props) {
             {repo && (
               <a href={repo} target="_blank" rel="noreferrer">
                 Repo ↗
+              </a>
+            )}
+            {video && (
+              <a href={video} target="_blank" rel="noreferrer">
+                Demo ↗
               </a>
             )}
           </footer>
