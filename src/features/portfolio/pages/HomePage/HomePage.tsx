@@ -65,7 +65,7 @@ export default function HomePage() {
           summary:
             'Originally built as a personal alternative to Splitwise, OurExpenses evolved into a full-stack tool tailored for couples living together. Built with JavaScript, React, Node.js, Express, and MongoDB, it helps users manage shared expenses in real time. It’s a practical solution to a real problem — and one that already has real users.',
           image: '/images/ourexpenses1.jpg',
-          image2: '/images/ourexpenses2.jpg',
+          image2: '/images/ourexpenses22.jpg',
           tags: [
             { name: 'React', Icon: SiReact, color: '#61DAFB' },
             { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
@@ -92,6 +92,22 @@ export default function HomePage() {
             { name: 'Three.js', Icon: SiThreedotjs, color: '#000000' },
           ],
           live: '/wander.html', // replace with your actual link
+        }}
+      />
+
+      <ProjectCard
+        project={{
+          title: 'BoothBoost',
+          summary:
+            'Built as my senior capstone project, BoothBoost is a full-stack web app designed to gamify fundraising at conventions and trade shows. Vendors can broadcast messages, track live leaderboards, and manage conventions in real-time. Awarded "Category Winner" at the UBCO capstone showcase.',
+          image: '/images/boothboost1.jpg',
+          image2: '/images/boothboost2.jpg',
+          tags: [
+            { name: 'Angular', Icon: SiAngular, color: '#DD0031' },
+            { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
+            { name: 'ASP.NET Core', Icon: SiDotnet, color: '#512BD4' },
+            { name: 'MySQL', Icon: SiMysql, color: '#4479A1' },
+          ],
         }}
       />
 
