@@ -63,12 +63,12 @@ export default function HomePage() {
         project={{
           title: 'OurExpenses',
           summary:
-            'A MERN-stack app for couples to track shared expenses with real-time balance updates, authentication, and group invites.',
+            'Originally built as a personal alternative to Splitwise, OurExpenses evolved into a full-stack tool tailored for couples living together. Built with JavaScript, React, Node.js, Express, and MongoDB, it helps users manage shared expenses in real time. It’s a practical solution to a real problem — and one that already has real users.',
           image: '/images/ourexpenses1.jpg',
-          image2: '/images/ourexpenses22.jpg',
+          image2: '/images/ourexpenses2.jpg',
           tags: [
             { name: 'React', Icon: SiReact, color: '#61DAFB' },
-            { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
+            { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
             { name: 'Node.js', Icon: SiNodedotjs, color: '#68A063' },
             { name: 'Express', Icon: SiExpress, color: '#000000' },
             { name: 'MongoDB', Icon: SiMongodb, color: '#4DB33D' },
@@ -76,6 +76,22 @@ export default function HomePage() {
           ],
           live: 'https://splitter-client.onrender.com/',
           repo: 'https://github.com/SpaceJamDVD/splitter',
+        }}
+      />
+
+      <ProjectCard
+        project={{
+          title: 'Wander',
+          summary:
+            'Created as part of a creative writing class, Wander began as an experiment in making text fade dynamically inside Twine. It evolved into a surreal, interactive experience where animations built with p5.js and Three.js push the story forward. Combining 2D and 3D graphics with narrative text, Wander invites players into a dreamy space between game and poem.',
+          image: '/images/wander.jpg',
+          image2: '/images/wander2.jpg',
+          tags: [
+            { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
+            { name: 'p5.js', Icon: SiP5Dotjs, color: '#ED225D' },
+            { name: 'Three.js', Icon: SiThreedotjs, color: '#000000' },
+          ],
+          live: '/wander.html', // replace with your actual link
         }}
       />
 
