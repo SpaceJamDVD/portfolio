@@ -3,6 +3,7 @@ import { Hero } from '../../components/Hero';
 import Wedge from '../../components/Wedge/Wedge';
 import About from '../../components/About/About';
 import Tools from '../../components/Tools/Tools';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import {
   SiReact,
   SiTypescript,
@@ -57,7 +58,26 @@ export default function HomePage() {
         }
         imageSrc="/images/QuinYakidaki.jpg"
       />
-      <Divider variant="custom" thickness="4px" color="var(--warmGrey)" />
+
+      <ProjectCard
+        project={{
+          title: 'OurExpenses',
+          summary:
+            'A MERN-stack app for couples to track shared expenses with real-time balance updates, authentication, and group invites.',
+          image: '/images/ourexpenses1.jpg',
+          image2: '/images/ourexpenses22.jpg',
+          tags: [
+            { name: 'React', Icon: SiReact, color: '#61DAFB' },
+            { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
+            { name: 'Node.js', Icon: SiNodedotjs, color: '#68A063' },
+            { name: 'Express', Icon: SiExpress, color: '#000000' },
+            { name: 'MongoDB', Icon: SiMongodb, color: '#4DB33D' },
+            { name: 'GitHub', Icon: SiGithub, color: '#181717' },
+          ],
+          live: 'https://splitter-client.onrender.com/',
+          repo: 'https://github.com/SpaceJamDVD/splitter',
+        }}
+      />
 
       <Tools
         tools={[
@@ -85,6 +105,8 @@ export default function HomePage() {
           { name: 'Figma', Icon: SiFigma, color: '#F24E1E' },
         ]}
       />
+
+      <Divider variant="custom" thickness="4px" color="var(--warmGrey)" />
 
       {/* rest of page */}
     </main>
