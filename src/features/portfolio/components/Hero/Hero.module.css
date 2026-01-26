@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  max-width: 1600px; /* matches your art size */
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -18,8 +18,8 @@
 
 .heroText {
   position: absolute;
-  bottom: 5%; /* tuck under arc — adjust to taste */
-  left: 37%; /* nudge horizontally */
+  bottom: 4%; /* tuck under arc — adjust to taste */
+  left: 37%;
   max-width: 600px;
   color: var(--charcoal);
 }
@@ -64,6 +64,20 @@
 
 .heroLinks a:hover {
   color: var(--rust);
+}
+
+.ctaButton {
+  background: var(--rust);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: #a63e22; /* darker rust shade */
 }
 
 @media (max-width: 900px) {

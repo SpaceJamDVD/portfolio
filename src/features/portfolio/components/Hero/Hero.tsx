@@ -8,6 +8,7 @@ type Props = {
   link: string; // GitHub
   link2: string; // LinkedIn
   imageSrc: string;
+  email: string; // Contact email
 };
 
 export default function Hero({
@@ -17,6 +18,7 @@ export default function Hero({
   link,
   link2,
   imageSrc,
+  email,
 }: Props) {
   return (
     <section className={styles.hero}>
@@ -36,6 +38,11 @@ export default function Hero({
             {link2 && (
               <a href={link2} target="_blank" rel="noreferrer">
                 <SiLinkedin size={28} /> LinkedIn
+              </a>
+            )}
+            {email && (
+              <a href={`mailto:${email}`} className={styles.ctaButton}>
+                Contact Me
               </a>
             )}
           </div>

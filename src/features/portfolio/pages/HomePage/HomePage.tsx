@@ -29,6 +29,7 @@ import {
   SiFigma,
 } from 'react-icons/si';
 import styles from './HomePage.module.css';
+import Contact from '../../Contact/Contact';
 
 export default function HomePage() {
   return (
@@ -41,6 +42,7 @@ export default function HomePage() {
         link="https://github.com/SpaceJamDVD"
         link2="https://www.linkedin.com/in/quin-finocchio-b7132724b/"
         imageSrc="/images/animorphlayout.png"
+        email="quinfinocchio@gmail.com"
       />
       <Divider variant="solid" thickness="4px" color="var(--warmGrey)" />
       <About
@@ -142,6 +144,8 @@ export default function HomePage() {
       />
 
       <Divider variant="custom" thickness="4px" color="var(--warmGrey)" />
+
+      <Contact />
 
       {/* rest of page */}
     </main>
