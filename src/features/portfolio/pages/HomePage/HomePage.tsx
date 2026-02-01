@@ -4,6 +4,8 @@ import Wedge from '../../components/Wedge/Wedge';
 import About from '../../components/About/About';
 import Tools from '../../components/Tools/Tools';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import EmploymentTimeLine from '../../components/EmploymentTimeLine/EmploymentTimeLine';
+import Athletics from '../../components/Athletics/Athletics';
 import {
   SiReact,
   SiTypescript,
@@ -127,6 +129,44 @@ export default function HomePage() {
         }}
       />
 
+      <Divider variant="solid" thickness="4px" color="var(--charcoal)" />
+
+      <EmploymentTimeLine
+        heading="Employment & Education"
+        nodes={[
+          {
+            type: 'start',
+            title: 'B.Sc. Computer Science',
+            subtitle: 'University of British Columbia Okanagan',
+            date: '2021 – 2025',
+            description:
+              'Studied software engineering, web development, and systems design, with an emphasis on building real, user-facing applications. Completed a senior capstone project in an agile team environment, taking a full-stack product from concept to deployment.',
+          },
+          {
+            type: 'end',
+            title: 'Web Application Developer',
+            subtitle: 'One Source Office Supplies',
+            date: '2025 – Present',
+            description:
+              'Working as a full-stack developer on internal business systems, building and maintaining features using PHP, PostgreSQL, React, and modern JavaScript tooling. Manage full application lifecycle from requirements gathering to developing and deploying. Built and maintained accounting tools, analytics dashboards, inhouse ATS and ticketing systems.',
+          },
+        ]}
+      />
+
+      <Athletics
+        heading="Athletics"
+        blurb="Before my agritourism and tech careers, I was a competitive downhill skateboarder."
+        category="Downhill Skateboarding"
+        images={[
+          { src: '/images/downhill1.jpg', alt: 'Downhill skateboarding race' },
+        ]}
+        achievements={[
+          { title: '2012 IGSA Junior 2 World Champion' },
+          { title: '2012 IGSA Junior 2 North American Champion' },
+          { title: '2011 IGSA Junior 2 North American Champion' },
+        ]}
+      />
+
       <Tools
         tools={[
           { name: 'React', Icon: SiReact, color: '#61DAFB' },
@@ -155,8 +195,6 @@ export default function HomePage() {
       />
 
       <Divider variant="custom" thickness="4px" color="var(--warmGrey)" />
-
-      {/* rest of page */}
     </main>
   );
 }

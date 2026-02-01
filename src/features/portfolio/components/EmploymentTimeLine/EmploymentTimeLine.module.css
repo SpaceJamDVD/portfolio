@@ -1,0 +1,104 @@
+.timeline {
+  margin: 96px auto;
+  max-width: 800px;
+  padding: 0 24px;
+}
+
+.heading {
+  font-family: 'Merriweather', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: var(--charcoal);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 24px;
+  position: relative;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.node {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--rust);
+  z-index: 2;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.start {
+  box-shadow: 0 0 0 4px rgba(203, 88, 48, 0.2);
+}
+
+.middle {
+}
+
+.end {
+  background: var(--charcoal);
+}
+
+.line {
+  width: 2px;
+  background: var(--rust);
+  margin-top: 8px;
+  flex: 1;
+  margin-bottom: -8px;
+}
+
+.content {
+  padding-bottom: 36px;
+}
+
+.content h3 {
+  margin: 0 0 6px 0;
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.3;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.content p {
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.6;
+  color: var(--warmGray) !important;
+  font-size: 0.95rem;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 64px;
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,106 @@
+.athletics {
+  margin: 96px auto;
+  padding: 0 24px;
+  max-width: 900px; /* Change from 1100px to match content width */
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 56px;
+  color: var(--charcoal);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 56px;
+  align-items: start; /* This is already correct */
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* IMAGES */
+
+.images {
+  display: grid;
+  gap: 24px;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* TEXT */
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Change from 28px to 0 */
+}
+
+.blurb {
+  max-width: 560px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--warmGrey);
+  margin: 0 0 28px 0; /* Add explicit margin instead */
+}
+
+.subheading {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--warmGrey);
+  margin: 0 0 28px 0; /* Add explicit margin */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.dot {
+  margin-top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rust);
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--warmGrey);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+}

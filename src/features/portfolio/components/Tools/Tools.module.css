@@ -7,7 +7,7 @@
 
 .heading {
   font-family: 'Merriweather', serif;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
   margin-bottom: 32px;
   color: var(--charcoal);
   position: relative;
@@ -50,7 +50,9 @@
 .icon {
   flex: 0 0 auto; /* don't shrink */
   display: block; /* avoid inline whitespace issues */
-  transition: transform 220ms ease, opacity 220ms ease;
+  transition:
+    transform 220ms ease,
+    opacity 220ms ease;
   opacity: 0.95;
 }
 .icon:hover {
