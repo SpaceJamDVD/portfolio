@@ -29,7 +29,6 @@ import {
   SiFigma,
 } from 'react-icons/si';
 import styles from './HomePage.module.css';
-import Contact from '../../Contact/Contact';
 
 export default function HomePage() {
   return (
