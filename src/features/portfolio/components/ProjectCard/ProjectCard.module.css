@@ -9,7 +9,7 @@
 
 .content {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 320px;
   gap: 32px;
   align-items: center;
   width: 100%;
@@ -61,7 +61,8 @@
 .imageWrapper {
   position: relative;
   width: 100%;
-  max-width: 320px; /* consistent width */
+  max-width: 320px;
+  height: 280px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--warmGray);
@@ -75,7 +76,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover; /* crops but keeps aspect ratio */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .imageHover {

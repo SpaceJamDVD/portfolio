@@ -95,7 +95,7 @@ export default function HomePage() {
             { name: 'p5.js', Icon: SiP5Dotjs, color: '#ED225D' },
             { name: 'Three.js', Icon: SiThreedotjs, color: '#000000' },
           ],
-          live: '/wander.html', // replace with your actual link
+          live: '/wander.html',
         }}
       />
 
@@ -104,8 +104,8 @@ export default function HomePage() {
           title: 'BoothBoost',
           summary:
             'Built as my senior capstone project in an agile team of four, BoothBoost is a full-stack web app designed to gamify fundraising at conventions and trade shows. Vendors can broadcast messages, track live leaderboards, and manage conventions in real-time. Awarded "Category Winner" at the UBCO capstone showcase.',
-          image: '/images/boothboost1.jpg',
-          image2: '/images/boothboost2.jpg',
+          image: '/images/boothboost2.jpg',
+          image2: '/images/boothboost1.jpg',
           tags: [
             { name: 'Angular', Icon: SiAngular, color: '#DD0031' },
             { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
@@ -113,6 +113,18 @@ export default function HomePage() {
             { name: 'MySQL', Icon: SiMysql, color: '#4479A1' },
           ],
           video: 'https://www.youtube.com/watch?v=cvw6szvee1Q',
+        }}
+      />
+
+      <ProjectCard
+        project={{
+          title: 'Poetry',
+          summary:
+            'Some of this was written for a poetry elective, and some of it just happened. Either way, it was a fun creative outlet that let me experiment with mixing digital art and writing. It also made me learn a bunch of new software. While most of the artwork was made using GIMP, most of the actual page layout was done using Scribus, a desktop publishing software.',
+          image: '/images/poetry1.jpg',
+          image2: '/images/poetry2.jpg',
+          tags: [{ name: 'GIMP', Icon: SiGimp, color: '#5C5543' }],
+          live: '/online_poetry_portfolio.pdf',
         }}
       />
 
@@ -144,8 +156,6 @@ export default function HomePage() {
       />
 
       <Divider variant="custom" thickness="4px" color="var(--warmGrey)" />
-
-      <Contact />
 
       {/* rest of page */}
     </main>
