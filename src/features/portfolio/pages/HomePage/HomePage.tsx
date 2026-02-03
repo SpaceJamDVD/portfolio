@@ -147,7 +147,7 @@ export default function HomePage() {
             subtitle: 'One Source Office Supplies',
             date: '2025 – Present',
             description:
-              'Working as a full-stack developer on internal business systems, building and maintaining features using PHP, PostgreSQL, React, and modern JavaScript tooling. Manage full application lifecycle from requirements gathering to developing and deploying. Built and maintained accounting tools, analytics dashboards, inhouse ATS and ticketing systems.',
+              'Working as a full-stack developer on internal business systems, building and maintaining features using PHP, PostgreSQL,and JavaScript tooling. Manage full application lifecycle from requirements gathering to developing and deploying. Built and maintained accounting tools, analytics dashboards, inhouse ATS and ticketing systems.',
           },
         ]}
       />
