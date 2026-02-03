@@ -120,7 +120,7 @@ export default function HomePage() {
         project={{
           title: 'Poetry',
           summary:
-            'Some of this was written for a poetry elective, and some of it just happened. Either way, it was a fun creative outlet that let me experiment with mixing digital art and writing. It also made me learn a bunch of new software. While most of the artwork was made using GIMP, most of the actual page layout was done using Scribus, a desktop publishing software.',
+            "Some of this was written for a poetry elective, and some of it just happened. Either way, it was a fun creative outlet that let me experiment with mixing digital art and writing. It also made me learn a bunch of new software. While most of the artwork was made using GIMP, most of the actual page layout was done using Scribus, a desktop publishing software. Some of the longer multipage elements are SVG's that I created using python scripts.",
           image: '/images/poetry1.jpg',
           image2: '/images/poetry2.jpg',
           tags: [{ name: 'GIMP', Icon: SiGimp, color: '#5C5543' }],
