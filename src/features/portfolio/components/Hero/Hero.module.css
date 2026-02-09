@@ -102,6 +102,11 @@
     text-align: center;
   }
 
+  .heroLinks {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .heroArt {
     width: 100%;
     margin-left: 0;
