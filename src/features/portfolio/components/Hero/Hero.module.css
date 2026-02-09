@@ -21,6 +21,8 @@
   bottom: 4%; /* tuck under arc — adjust to taste */
   left: 37%;
   max-width: 600px;
+  left: 37%;
+  max-width: 600px;
   color: var(--charcoal);
 }
 
@@ -69,15 +71,21 @@
 .ctaButton {
   background: var(--rust);
   color: white !important;
-  padding: 10px 20px;
+  padding: 10px 24px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(192, 78, 44, 0.2);
 }
 
 .ctaButton:hover {
   background: #a63e22; /* darker rust shade */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(192, 78, 44, 0.3);
 }
 
 @media (max-width: 900px) {
@@ -97,7 +105,7 @@
   .heroArt {
     width: 100%;
     margin-left: 0;
-    padding: 0 16px;
+    padding: 0;
     box-sizing: border-box;
   }
 }
