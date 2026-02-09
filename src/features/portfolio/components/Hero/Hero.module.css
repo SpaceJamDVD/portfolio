@@ -93,4 +93,11 @@
   .blurb {
     text-align: center;
   }
+
+  .heroArt {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
 }
